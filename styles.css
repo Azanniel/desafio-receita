@@ -1,0 +1,101 @@
+:root {
+  --color-background-page: #EAEAEA;
+  --color-background-recipe: #FFFFFF;
+  --color-title: #1B1B1B;
+  --color-subtitle: #1B1B1B;
+  --color-text: #39393A;
+  --color-cation: #8F8F8F;
+
+  --weight-title: 700;
+  --weight-subtitle: 700;
+  --weight-text: 400;
+
+  --size-title: 1.75rem;
+  --size-subtitle: 1.25rem;
+  --size-text: 1rem;
+  --size-cation: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background: var(--color-background-page);
+}
+
+main.recipe-container {
+  background: var(--color-background-recipe);
+  width: 70%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 0.625rem;
+}
+
+main.recipe-container h1 {
+  text-align: center;
+  margin: 10px auto;
+  color: var(--color-title);
+  font-weight: var(--weight-title);
+}
+
+figure.recipe-image {
+  text-align: right;
+  font-size: var(--size-cation);
+  color: var(--color-cation);
+}
+
+figure.recipe-image img {
+  width: 100%;
+  height: 17.8rem;
+
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.625rem;
+  margin-bottom: 5px;
+}
+
+article h3, main > section h3 {
+  text-align: center;
+  margin: 1.75rem auto;
+  text-transform: uppercase;
+
+  color: var(--color-subtitle);
+  font-weight: var(--weight-subtitle);
+}
+
+article ul, article ol {
+  list-style-position: inside;
+  line-height: 46px;
+
+  color: var(--color-text);
+  font-weight: var(--weight-text);
+}
+
+main section p {
+  color: var(--color-text);
+  font-weight: var(--weight-text);
+}
+
+footer {
+  font-size: var(--size-text);
+  color: var(--color-text);
+
+  margin: 15px auto;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  main.recipe-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  main.recipe-container {
+    width: 90%;
+  }
+}
